@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* typography ............... */
+.logo{
+    color: black;
+    font-size: 1.2rem;
+}
+
+#nav_list a{
+    color:rgb(85, 81, 81);
+    font-size: 0.89rem;
+}
+
+
+/* navigation bar  */
+header {
+    background-color: aliceblue;
+    padding: 1.7em;
+}
+
+.nav-container{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+}
+
+#nav_list{
+    list-style: none;
+}
+
+#nav_list li{
+    display: inline;
+    margin-left: 1.5em;
+}
+
+#nav_list a:hover{
+    color: rgb(185, 184, 184);
+}
+
+/* utility classes  */
+.btn{
+    background:transparent;
+    padding: 0.7em 1.2em;
+    border-radius: 0.4em;
+    font-weight: bolder;
+    transition:backgroud-color 0.4s ease-in, color 0.4s ease-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:rgb(15, 213, 15);
+    color: white;
+    border-color: rgb(15, 213, 15);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+/* medai queries  */
+
+/* navbar media query  */
+@media (max-width:786px){
+    .nav-container{
+        flex-direction: column;
+    }
+    #nav_list{
+        margin: 0.5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #nav_list li{
+        margin: 1em;
+    }
+}
+
