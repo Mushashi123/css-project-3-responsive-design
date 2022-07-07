@@ -188,6 +188,53 @@ main{
 
 
 
+/* footer section .................... */
+footer a{
+    text-decoration: none;
+    color: #6A7076;
+}
+
+.footer_nav{
+    list-style: none;
+    display: flex;
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    width: 40%;
+}
+
+footer  li{
+    margin: 0 1.2em;
+}
+
+footer{
+    background-color: #f0f5f9;
+}
+
+.footer-container > *{
+    margin: 0.6em auto;
+}
+
+footer img{
+    cursor: pointer;
+}
+/* footer section ends here .............  */
+
 
 /* utility classes  */
 .btn {
