@@ -23,6 +23,10 @@
 /* navigation bar  */
 header {
     padding: 1.7em;
+    position:sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
     /* height: 6em; */
     /* border: 2px solid black; */
 }
