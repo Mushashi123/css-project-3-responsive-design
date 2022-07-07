@@ -153,6 +153,42 @@ main{
 
 
 
+/* features section ............  */
+#features ul {
+    list-style: none;
+}
+
+
+.features {
+    background-color: #f0f5f9;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 2em;
+}
+
+.feature-image {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.feature-main {
+    text-align: center;
+}
+
+.features li {
+    margin: 1em;
+}
+
+.features-title {
+    margin: 0.5em
+}
+/* features section ends here ............ */
+
+
+
+
 /* utility classes  */
 .btn {
     background: transparent;
@@ -185,6 +221,7 @@ main{
     color: #21bf73;
 }
 /* utility classes end ...............  */
+
 
 
 /* medai queries  */
@@ -228,6 +265,9 @@ main{
     }
 }
 
+
+
+
 /* media query for next section  */
 @media (min-width : 846px){
     .flex-container-next{
@@ -235,5 +275,35 @@ main{
     }
     .next-content{
         flex-direction: row;
+    }
+}
+
+
+/* media query for features section  */
+@media (min-width : 846px) {
+    .flex-container-column {
+        flex-direction: column;
+    }
+
+    .next-content {
+        flex-direction: row;
+    }
+
+    .features {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .feature-image {
+        width: 40%;
+        margin: 0;
+    }
+
+    .feature-main {
+        width: 60%;
+    }
+
+    #feature-1 {
+        flex-direction: row-reverse;
     }
 }
