@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300,800&family=Lora:ital@1&family=Ubuntu:wght@300,800&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +7,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* header section .........................................  */
 /* typography ............... */
 .logo{
     color: black;
@@ -18,11 +20,11 @@
     font-size: 0.89rem;
 }
 
-
 /* navigation bar  */
 header {
-    background-color: aliceblue;
     padding: 1.7em;
+    /* height: 6em; */
+    /* border: 2px solid black; */
 }
 
 .nav-container{
@@ -51,32 +53,144 @@ header a{
 #nav_list a:hover{
     color: rgb(185, 184, 184);
 }
+/* header ends ..................................... */
+
+
+
+/*   Home section .................................... */
+
+/* typography  */
+.h-primary{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3a3a47;
+}
+
+.h-secondary{
+    color: #5c5c5c;
+    font-size: 1rem;
+}
+
+#home {
+    /* height: 80vh; */
+    border: 2px solid #f0f5f9;
+    background-color: #f0f5f9;
+}
+
+.main-body{
+    color: #818198;
+    font-size: 1rem;
+}
+
+main{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.75em;
+}
+
+.main-img{
+    width: 50%;
+    display: block;
+}
+
+.h-secondary{
+    order: 0;
+    margin-bottom: 0.5em;
+}
+
+.h-primary{
+    order: 1;
+    margin-bottom: 0.35em;
+}
+
+.main-body{
+    order: 3;
+}
+
+.main-btn-container{
+    order: 2;
+    margin-bottom: 1em;
+}
+/* home section ends ..............................  */
+
+
+
+/* next section  ................................*/
+.content-title{
+    margin: 0.3em 0.5em 0.5em 0;
+}
+
+.next-content{
+    display: flex;
+    flex-direction: column;
+    background-color: 2px solid black;
+}
+
+.content-image{
+    width: 28%;
+}
+
+.content{
+    background-color: aliceblue;
+    padding: 2em;
+    margin: 2em;
+}
+
+#content-1{
+    background-color: #fff2e5;
+}
+#content-2{
+    background-color: #f8f9fa;
+}
+#content-3{
+    background-color: #f0f5f9;
+}
+
+/* next-section ends ..........................  */
+
+
 
 /* utility classes  */
-.btn{
-    background:transparent;
+.btn {
+    background: transparent;
     padding: 0.7em 1.2em;
     border-radius: 0.4em;
     font-weight: bolder;
-    transition:backgroud-color 0.4s ease-in, color 0.4s ease-out;
+    transition: backgroud-color 0.4s ease-in, color 0.4s ease-out;
     cursor: pointer;
 }
 
-.btn:hover{
-    background-color:rgb(15, 213, 15);
+.btn:hover {
+    background-color: rgb(15, 213, 15);
     color: white;
     border-color: rgb(15, 213, 15);
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
+
+.flex-container {
+    /* margin: auto; */
+    margin: 6em auto;
+    max-width: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.green {
+    color: #21bf73;
+}
+/* utility classes end ...............  */
 
 
 /* medai queries  */
 
 /* navbar media query  */
-@media (max-width:786px){
+@media (max-width:845px){
     .nav-container{
         flex-direction: column;
     }
@@ -92,3 +206,34 @@ header a{
     }
 }
 
+
+/* homesection media query  */
+@media (max-width:845px){
+    .flex-container{
+        flex-direction: column;
+    }
+    main{
+        /* border: 2px solid black; */
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .main-img{
+        order: 0;
+        margin: auto;
+        width: 100%;
+    }
+    main{
+        order: 1;
+    }
+}
+
+/* media query for next section  */
+@media (min-width : 846px){
+    .flex-container-next{
+        flex-direction: column;
+    }
+    .next-content{
+        flex-direction: row;
+    }
+}
